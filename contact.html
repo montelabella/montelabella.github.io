@@ -1,73 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
+
 <head>
-	<meta charset="utf-8">
-	<title>Crystal Hughes</title>
-	<link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <title>Contact | Crystal Hughes/title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
-	<!-- Header navigation -->
-	<header class="clearfix">
-	  <section class="navbar">
-	  	<div class="logo">
-		  <a href="index.html"><h1 >Crystal Hughes</h1></a>
-	    </div>
-		<nav>
-		  <ul>
-			<li><a href="index.html">About</a></li>
-			<li id="lineStyle"><a href="portfolio.html">Portfolio</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		  </ul>
-		</nav>
-	   </section>
-	</header>
-	<!-- Page Content -->
-	<section class="clearfix">
-		<article>
-			<h1>Contact</h1>
-			<hr>
-			<form action="mailto:montelabella@gmail.com" method="post" enctype="text/plain">
-				<label>Name</label>
-				<br>
-				<input type="text" name="Name" placeholder="John Smith">
-				<br>
-				<label>Email</label>
-				<br>
-				<input type="email" name="email" placeholder="example@gmail.com">
-				<br>
-				<label>Message:</label>
-				<br>
-				<textarea name="message" rows="10" cols="30"></textarea>
-				<input id="submit" type="submit" name="submit" value="submit">
-			</form>
-		</article>
-	<!-- Social Links -->
-	<aside>
-		<h2>Connect with Me</h2>
-		<hr>
-		<ul class="socialTags">
-		  <li>
-		  	<a href="https://github.com/montelabella" target="_blank">
-		  		<img src="assets/images/if_social-github_216082.png">
-		  	</a>
-		  </li>
-		  <li>
-		  	<a href="https://www.linkedin.com/in/crystal-hughes-62300978" target="_blank">
-		  		<img src="assets/images/if_Linkedin_Solid_1435169.png" alt="">
-		  	</a>
-		  </li>
-		  <li>
-		  	<a href="https://stackoverflow.com/users/9108731/montelabella" target="_blank">
-		  		<img src="assets/images/if_stackoverflow-2048-black_167631.png">
-		  	</a>
-		  </li>
-		</ul>
-	</aside>
-</section>
-	<!-- Footer -->
-	<footer class="clearfix">
-		<p>© Copyright 2018 Crystal Hughes</p>
-	</footer>
+
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Crystal Hughes</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
+
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
+
+    </section>
+
+    <section class="sidebar">
+      <div id="connect">
+        <h2>Connect with Me</h2>
+
+        <a href="https://github.com/montelabella" target="_blank"><img src="assets/images/if_social-github_216082.png" class="social" alt="GitHub" /></a>
+        <a href="www.linkedin.com/in/crystal-hughes-62300978"><img src="assets/images/if_Linkedin_Solid_1435169.png" class="social" alt="LinkedIn" /></a>
+        <a href="https://stackoverflow.com/users/9108731/montelabella"><img src="assets/images/if_stackoverflow-2048-black_167631.png" class="social" alt="Stack Overflow" /></a>
+       </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="container">
+      Copyright &copy; 2016 Your Name
+    </div>
+  </footer>
 </body>
+
 </html>
